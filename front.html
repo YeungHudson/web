@@ -1,0 +1,17 @@
+<html>
+<!-- this is the login site -->
+<!-- still need to add the connection to the php file that will curl to middle -->
+<body>
+	<form action="submitform.php" method="POST"> <!-- the submitform.php is just a direct connection to some script for the 
+                                                    user to log into the database -->
+
+	Username: <input type=text name=username size=25 maxlength=25>
+	<br>
+	<!-- should censor the password through js -->
+	Password: <input type=text name=password size=25 maxlength=25>
+	<p>
+	<input type=submit value=Login>
+	</p>
+	</form>
+</body>
+</html>
