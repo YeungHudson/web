@@ -59,9 +59,11 @@
   $loginValid = true;
   if valid, then send msg
 	if ($loginValid) {
-     foreach ($responseObj as &$str) {
-       $str = strtr($responseObj[msg], 'Invalid Login!', 'Valid Login!');
-     }
+     $responseObj = [
+			[	
+				msg => 'Valid Login!' //by default is invalid login
+	        	]
+        	];
 	}
 
 	$myJSON = json_encode($responseObj);
