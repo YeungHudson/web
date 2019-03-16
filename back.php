@@ -14,9 +14,7 @@
     	}
  
 	$dbhost = "sql1.njit.edu";
-	$dbuser = "hy276";
-	$dbpass = "HY9Co7Qkq";
-	$dbname = "hy276";
+		//logins here
 	$sql_conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 	
 	if(!$sql_conn) {
